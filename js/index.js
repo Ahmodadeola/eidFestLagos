@@ -59,6 +59,7 @@ $(() => {
     });
 
     $("ul#mobile-nav li").on("click", e => {
+        console.log("I've been clicked");
         $("i.fa.fa-bars").trigger("click");
     });
 });
