@@ -43,7 +43,6 @@ $(() => {
 		prevOffset = currentOffset;
 		currentOffset = window.pageYOffset;
 		offsetDiff = currentOffset - prevOffset;
-		console.log("The diff is ", offsetDiff);
 		if (offsetDiff < 0) {
 			return;
 		}
@@ -57,5 +56,10 @@ $(() => {
 			$("section").removeClass("styled-entrance");
 			$("section#about").addClass("styled-entrance show");
 		}
+	});
+
+	$("ul#mobile-nav li").on("click", e => {
+		console.log("I've been clicked");
+		$("i.fa.fa-bars").trigger("click");
 	});
 });
