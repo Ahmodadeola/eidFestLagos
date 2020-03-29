@@ -1,0 +1,204 @@
+header {
+	background: linear-gradient(rgba(217, 43, 233, 0.7), rgba(190, 73, 142, 0.5)),
+		url("../images/mosque1.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+}
+
+nav ul a,
+.dropdown-content li > a {
+	color: purple;
+	font-weight: 600;
+	height: 40px;
+}
+
+.side-nav {
+	background: linear-gradient(
+		45deg,
+		rgba(29, 25, 28, 0.8),
+		rgba(71, 44, 71, 0.8)
+	);
+	font: 550 0.98em verdana;
+}
+
+.side-nav li:hover {
+	background-color: rgba(136, 112, 136, 0.5);
+}
+
+.side-nav li {
+	color: white;
+	padding: 6px;
+	border-bottom: 1px solid white;
+}
+
+.side-nav li a,
+.side-nav i.fa {
+	color: white;
+}
+
+.showcase.container {
+	padding-top: 150px;
+}
+
+.showcase.container p {
+	font-weight: 550;
+	font-size: 1.14em;
+}
+
+.section.section-about {
+	font-weight: 550;
+	font-size: 0.97em;
+	line-height: 24px;
+}
+
+.section.section-about .about-img {
+	height: 300px;
+	margin-top: 15px;
+}
+
+.section.section-about a.btn {
+	margin-bottom: 15px;
+}
+
+section.section-contact {
+	padding: 21px;
+}
+
+section.contact .card-panel {
+	border-color: purple;
+	outline: purple;
+}
+
+.active-link {
+	color: rgb(213, 127, 224);
+	font-weight: bolder;
+}
+
+a:hover {
+	color: #aa00ff;
+	font-size: 1.1em;
+	background-color: initial !important;
+}
+
+img.logo {
+	height: 50px;
+	width: 100px;
+	padding-top: 16px;
+}
+
+div.active-indicator {
+	height: 3px !important;
+	width: 50px !important;
+	margin: auto;
+	margin-top: 8px;
+	background: linear-gradient(45deg, rgb(130, 22, 231), rgb(211, 191, 211));
+}
+
+div.carousel.carousel-slider {
+	margin: auto;
+	height: 500px !important;
+}
+
+div.carousel-item {
+	height: 200px;
+	position: relative;
+}
+
+div.carousel img {
+	height: 100%;
+	width: 100%;
+	opacity: brightness(0.3);
+}
+
+div.carousel-text {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: rgba(169, 82, 177, 0.5);
+}
+
+div.accounts a {
+	padding: 12px;
+	color: purple;
+}
+
+section.section-contact {
+	position: relative;
+}
+
+section.section-contact .card-panel {
+	position: relative;
+	z-index: 1;
+}
+
+section.section-contact h5 i.fa {
+	color: white;
+}
+
+section.section-contact div.contact-info div.card-panel {
+	height: 200px;
+}
+
+div.contact-info div.card-panel h5 {
+	padding: 14px;
+	color: white;
+}
+
+div.accounts h5 {
+	margin-bottom: 30px;
+}
+
+footer {
+	height: 90px;
+}
+
+.purple-border {
+	border-bottom-color: purple !important;
+}
+
+#googlemap {
+	position: absolute;
+	left: 0;
+	top: 300px;
+	bottom: 20px;
+	height: 600px;
+	width: 100%;
+	z-index: 0;
+}
+
+section {
+	opacity: 0;
+}
+
+.styled-entrance {
+	animation: appear 1.5s ease-out;
+}
+
+.show-half {
+	opacity: 0.5;
+}
+
+.show {
+	opacity: 1;
+}
+
+@keyframes appear {
+	0% {
+		transform: translateY(400px);
+		opacity: 0.4;
+	}
+	100% {
+		transform: translateY();
+		opacity: 1;
+	}
+}
+
+@media (min-width: 990px) {
+	img.logo {
+		position: absolute;
+		left: -8vw;
+	}
+}
