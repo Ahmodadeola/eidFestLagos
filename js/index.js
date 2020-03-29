@@ -10,7 +10,6 @@ $(() => {
 			link.nextElementSibling.classList.add("active-indicator");
 		});
 	});
-
 	const contactInputs = [...document.querySelectorAll("div.input-field input")];
 	contactInputs.forEach(input => {
 		input.addEventListener("focus", e => {
@@ -18,24 +17,20 @@ $(() => {
 			$("div.input-field input, textarea")
 				.next()
 				.removeClass("purple-text");
-
 			input.classList.add("purple-border");
 			console.log(input.nextElementSibling);
 			input.nextElementSibling.classList.add("purple-text");
 		});
 	});
-
 	const textarea = document.querySelector("div.input-field textarea");
 	textarea.addEventListener("focus", e => {
 		$("div.input-field input").removeClass("purple-border");
 		$("div.input-field input, textarea")
 			.next()
 			.removeClass("purple-text");
-
 		textarea.classList.add("purple-border");
 		textarea.nextElementSibling.classList.add("purple-text");
 	});
-
 	let currentOffset = 0,
 		prevOffset = 0,
 		offsetDiff;
@@ -43,6 +38,7 @@ $(() => {
 		prevOffset = currentOffset;
 		currentOffset = window.pageYOffset;
 		offsetDiff = currentOffset - prevOffset;
+		console.log("The diff is ", offsetDiff);
 		if (offsetDiff < 0) {
 			return;
 		}
@@ -59,7 +55,6 @@ $(() => {
 	});
 
 	$("ul#mobile-nav li").on("click", e => {
-		console.log("I've been clicked");
 		$("i.fa.fa-bars").trigger("click");
 	});
 });
