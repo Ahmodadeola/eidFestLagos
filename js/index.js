@@ -58,4 +58,8 @@ $(() => {
 			$("section#about").addClass("styled-entrance show");
 		}
 	});
+
+        $('ul#mobile-nav li').on('click', e = {
+             $('i.fa.fa-bars').trigger('click');
+        });
 });
