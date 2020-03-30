@@ -1,3 +1,14 @@
+body {
+	font-family: "Alegreya", serif !important;
+}
+
+h1,
+h3,
+h4,
+a {
+	font-family: "Muli", sans-serif !important;
+}
+
 header {
 	background: linear-gradient(rgba(217, 43, 233, 0.7), rgba(190, 73, 142, 0.5)),
 		url("../images/mosque1.jpg");
@@ -72,7 +83,6 @@ section.section-contact {
 
 section.contact .card-panel {
 	border-color: purple;
-	outline: purple;
 }
 
 .active-link {
@@ -90,6 +100,12 @@ img.logo {
 	height: 50px;
 	width: 100px;
 	padding-top: 16px;
+}
+
+.footer-logo {
+	display: inline-block;
+	height: 30px;
+	width: 80px;
 }
 
 div.active-indicator {
@@ -129,7 +145,7 @@ div.accounts a {
 	color: purple;
 }
 
-section.section-contact {
+.map-row {
 	position: relative;
 }
 
@@ -157,6 +173,14 @@ div.accounts h5 {
 
 footer {
 	height: 90px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+footer * {
+	padding-left: 10px;
 }
 
 .purple-border {
@@ -164,13 +188,10 @@ footer {
 }
 
 #googlemap {
-	position: absolute;
-	left: 0;
-	top: 300px;
-	bottom: 20px;
-	height: 600px;
+	height: 540px;
 	width: 100%;
-	z-index: 0;
+	z-index: 10;
+	margin-bottom: 40px;
 }
 
 section {
