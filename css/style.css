@@ -1,12 +1,13 @@
-body {
-	font-family: "Alegreya", serif !important;
+section h6,
+p {
+	font-family: "Montserrat", sans-serif !important;
 }
 
 h1,
 h3,
 h4,
 a {
-	font-family: "Muli", sans-serif !important;
+	font-family: "Alegreya", serif !important;
 }
 
 header {
@@ -63,7 +64,7 @@ nav ul a,
 }
 
 .section.section-about {
-	font-weight: 550;
+	font-weight: 520;
 	font-size: 0.97em;
 	line-height: 24px;
 }

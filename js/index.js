@@ -18,7 +18,6 @@ $(() => {
 				.next()
 				.removeClass("purple-text");
 			input.classList.add("purple-border");
-			console.log(input.nextElementSibling);
 			input.nextElementSibling.classList.add("purple-text");
 		});
 	});
@@ -38,7 +37,6 @@ $(() => {
 		prevOffset = currentOffset;
 		currentOffset = window.pageYOffset;
 		offsetDiff = currentOffset - prevOffset;
-		console.log("The diff is ", offsetDiff);
 		if (offsetDiff < 0) {
 			return;
 		}
@@ -56,5 +54,20 @@ $(() => {
 
 	$("ul#mobile-nav li").on("click", e => {
 		$("i.fa.fa-bars").trigger("click");
+	});
+
+	$("div.accounts a").on("click", function() {
+		let link = $(this).attr("href");
+		window.location = link;
+	});
+
+	$("a.more-text").on("click", () => {
+		$("span.more-text").removeClass("hide");
+		$("a.more-text").addClass("hide");
+	});
+
+	$("a.hide-text").on("click", () => {
+		$("span.more-text").addClass("hide");
+		$("a.more-text").removeClass("hide");
 	});
 });
