@@ -11,8 +11,8 @@ a {
 }
 
 header {
-	background: linear-gradient(rgba(217, 43, 233, 0.7), rgba(190, 73, 142, 0.5)),
-		url("../images/mosque1.jpg");
+	background: linear-gradient(rgba(217, 43, 233, 0.1), rgba(190, 73, 142, 0.1)),
+		url("../images/mosque7.jpg");
 	background-position: center;
 	background-size: cover;
 	min-height: 100vh;
@@ -40,7 +40,7 @@ nav ul a,
 }
 
 .side-nav li:hover {
-	background-color: rgba(136, 112, 136, 0.5);
+	background-color: rgba(136, 112, 136, 0.2);
 }
 
 .side-nav li {
@@ -137,8 +137,8 @@ div.carousel-text {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	color: white;
-	background-color: rgba(169, 82, 177, 0.5);
+	color: rgb(131, 84, 84);
+	background-color: rgba(169, 82, 177, 0.3);
 }
 
 div.accounts a {
